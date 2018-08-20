@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <style>
+      body {
+        background-color: #849d8f;
+      }
+    </style>
   </head>
   <body>
     <header class="main-header">
-      <h1 class="visually-hidden">Глэйси Шоп</h1>
       <nav class="main-navigation">
-        <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси Шоп">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси Шоп">
+        </a>
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a>
             <ul class="catalog-box">
@@ -23,17 +29,27 @@
           <li><a href="info.html">О компании</a></li>
         </ul>
         <ul class="additional-navigation">
-          <!-- Здесь будет форма -->
-          <li class="serch-buttom"></li>
-          <!-- Здесь будет форма -->
-          <li class="login-link-buttom">Вход</li>
-          <li><a href="basket.html">Корзина</a></li>
+          <li>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <button type="button" name="serch">
+                <img src="img/loupe.svg" alt="Кнопка поиска">
+              </button>
+            </form>
+          </li>
+          <li>
+            <a href="entrance.html"><img src="img/entrance.svg" alt="Кнопка входа">Вход</a>
+          </li>
+          <li>
+            <a href="basket.html"><img src="img/basket-red.svg" alt="Кнопка корзины">Корзина</a>
+          </li>
         </ul>
       </nav>
-      <section>
+
+      <div>
         <h2 class="visually-hidden">Время работы, телефон</h2>
         <p class="working-hours">С 10 до 20 ежедневно<br><span class="phone-number">8 812 450-25-25</span></p>
-      </section>
+      </div>
+
     </header>
 
     <main class="container">
@@ -47,7 +63,75 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="get">
+
+          <div>
+            <label for="sort">Сортировка</label>
+            <select id="sort" name="sort">
+              <option value="popularity">По популярности</option>
+              <option value="increase-price">Сначала недорогие</option>
+              <option value="decrease-price">Сначала дорогие</option>
+              <option value="fat">По жирности</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="price">Цена: 100 руб. - 500 руб.</label>
+              <input type="range" name="price" id="price" step="1" value="100" min="100" max="500">
+              <input type="range" name="price" id="price" step="1" value="500" min="100" max="500">
+          </div>
+
+          <fieldset>
+            <legend>Жирность</legend>
+            <ul class="fat">
+              <li>
+                <input type="radio" name="fat" value="0" id="zero">
+                <label for="zero">0%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat" value="10" id="ten" checked>
+                <label for="ten">10%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat" value="less30" id="less30">
+                <label for="less30">До 30%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat" value="more30" id="more30">
+                <label for="more30">Выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Наполнители</legend>
+            <ul class="additive">
+              <li>
+                <input type="checkbox" name="chocolate" id="chocolate" checked>
+                <label for="chocolate">Шоколадные</label>
+              </li>
+              <li>
+                <input type="checkbox" name="sugar-powders" id="sugar-powders" checked>
+                <label for="sugar-powders">Сахарные присыпки</label>
+              </li>
+              <li>
+                <input type="checkbox" name="fruits" id="fruits">
+                <label for="fruits">Фрукты</label>
+              </li>
+              <li>
+                <input type="checkbox" name="syrups" id="syrups">
+                <label for="syrups">Сиропы</label>
+              </li>
+              <li>
+                <input type="checkbox" name="jams" id="jams">
+                <label for="jams">Джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit">Применить</button>
+
+        </form>
       </section>
 
       <section class="catalog">
@@ -149,9 +233,33 @@
         <li><a href="standards.html">Экологические стандарты</a></li>
       </ul>
       <div>
-          <p class="footer-copyright"><a class="button" href="https://up.htmlacademy.ru/htmlcss/22"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип htmlacademy">Сделано в HTML Academy</a> &#169; 2017</p>
+        <p class="footer-copyright"><a class="button" href="https://up.htmlacademy.ru/htmlcss/22"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип htmlacademy">Сделано в HTML Academy</a> &#169; 2017</p>
       </div>
     </footer>
+
+    <section class="basket-form">
+      <table>
+        <tr class="visually-hidden">
+          <td>Вид мороженого</td>
+          <td>Вес и цена</td>
+          <td>Стоимость</td>
+        </tr>
+        <tr>
+          <td><img src="img/product1.jpg" width="26" height="26" alt="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</td>
+          <td>1,5кг * 200 руб.</td>
+          <td>300 руб.</td>
+        </tr>
+        <tr>
+          <td><img src="img/product3.jpg" width="26" height="26" alt="Сливочно-клубничное с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</td>
+          <td>1,5 кг * 300 руб.</td>
+          <td>450 руб.</td>
+        </tr>
+      </table>
+      <p>Итого: 750 руб.</p>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <button type="submit">Оформить заказ</button>
+      </form>
+    </section>
 
   </body>
 </html>

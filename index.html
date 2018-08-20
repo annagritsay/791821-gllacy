@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <style>
+      body {
+        background-color: #849d8f;
+      }
+    </style>
   </head>
   <body>
     <header class="main-header">
@@ -23,17 +28,26 @@
           <li><a href="info.html">О компании</a></li>
         </ul>
         <ul class="additional-navigation">
-          <!-- Здесь будет форма -->
-          <li class="serch-buttom"></li>
-          <!-- Здесь будет форма -->
-          <li class="login-link-buttom">Вход</li>
-          <li><a href="basket.html">Корзина</a></li>
+          <li>
+          <form action="https://echo.htmlacademy.ru" method="post">
+           <button type="button" name="serch">
+             <img src="img/loupe.svg" alt="Кнопка поиска">
+           </button>
+         </form>
+          </li>
+          <li>
+            <a href="entrance.html"><img src="img/entrance.svg" alt="Кнопка входа">Вход</a>
+          </li>
+          <li>
+            <a href="basket.html"><img src="img/basket-red.svg" alt="Кнопка корзины">Корзина</a>
+          </li>
         </ul>
       </nav>
-      <section>
+
+      <div>
         <h2 class="visually-hidden">Время работы, телефон</h2>
         <p class="working-hours">С 10 до 20 ежедневно<br><span class="phone-number">8 812 450-25-25</span></p>
-      </section>
+      </div>
     </header>
 
     <main class="container">
@@ -46,7 +60,6 @@
         <h2>Пломбир с помадкой и клубничный щербет</h2>
           <img src="img/fon-3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
         <a  href="catalog.html">Давайте оба!</a>
-          <!-- Здесь будет форма переключения слайдов -->
       </section>
 
       <section class="special-offers">
@@ -68,28 +81,28 @@
       <section>
         <h2 class="visually-hidden">Хиты</h2>
         <ul class="hits">
-          <li class="orange">
+          <li>
             <img src="img/product1.jpg" width="267" height="267" alt="Сливочное мороженое">
             <a href="card-product1.html">
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </a>
             <a href="#">Быстрый просмотр</a>
           </li>
-          <li class="coffee">
+          <li>
             <img src="img/product2.jpg" width="267" height="267" alt="Сливочное мороженое">
             <a href="card-product2.html">
               <h3>Сливочно-кофейное с кусочками шоколада</h3>
             </a>
             <a href="#">Быстрый просмотр</a>
           </li>
-          <li class="strawberry">
+          <li>
             <img src="img/product3.jpg" width="267" height="267" alt="Сливочное мороженое">
             <a href="card-product3.html">
               <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </a>
             <a href="#">Быстрый просмотр</a>
           </li>
-          <li class="creme-brulee">
+          <li>
             <img src="img/product4.jpg" width="267" height="267" alt="Сливочное мороженое">
             <a href="card-product4.html">
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
@@ -125,20 +138,25 @@
         </a>
       </section>
 
-      <section>
+      <section class="mailing-form">
         <h2 class="visually-hidden">Рассылка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Здесь будет форма -->
-        <span class="rofm">Форма отправки</span>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <div class="email-mailing-form">
+            <input type="email" name="email" id="email" autocomplete="on" placeholder="Электронная почта">
+          </div>
+          <div class="buttons button-mailing-form">
+            <input type="submit" value="Отправить">
+          </div>
+        </form>
       </section>
 
-      <section>
+      <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <img src="img/card.jpg" width="1250" height="430" alt="Карта офиса по адресу: ул. Большая Конюшенная, 19/8 Санкт-Петербург">
+        <img src="img/map.jpg" width="1250" height="430" alt="Карта офиса компании по адресу: ул. Большая Конюшенная, 19/8 Санкт-Петербург">
         <div class="adress">
           <p>Адрес главного офиса и офлайн-магазина: <b>ул. Большая Конюшенная, 19/8 Санкт-Петербург</b> для заказов по телефону <b>8 812 450-25-25</b> (с 10 до 20 ежедневно)</p>
           <a href="#.html">Форма обратной связи</a>
-          <!-- Здесь будет форма -->
         </div>
       </section>
     </main>
@@ -160,6 +178,53 @@
           <p class="footer-copyright"><a class="button" href="https://up.htmlacademy.ru/htmlcss/22"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип htmlacademy">Сделано в HTML Academy</a> &#169; 2017</p>
       </div>
     </footer>
+
+    <section class="feedback-form">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend class="visually-hidden">Форма обратной связи</legend>
+          <p>Мы обязательно вам ответим!</p>
+          <div>
+            <input type="text" name="name" placeholder="Как вас зовут?">
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Ваша почта для ответа?">
+          </div>
+          <div>
+            <textarea placeholder="Напишите что-нибудь..." rows="7" cols="50"></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Отправить">
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+     <section class="login-form">
+       <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend class="visually-hidden">Форма входа</legend>
+          <div>
+            <input type="email" name="email" placeholder="Электронная почта">
+          </div>
+          <div>
+            <input type="password" name="password" placeholder="Пароль">
+          </div>
+          <div>
+            <input type="submit" value="Войти">
+          </div>
+        </fieldset>
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </form>
+    </section>
+
+    <section>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <input type="text" name="serch" id="serch" placeholder="Что ищем?">
+        <label class="visually-hidden" for="serch">Поле для поиска</label>
+      </form>
+    </section>>
 
   </body>
 </html>
