@@ -39,7 +39,7 @@
           </li>
           <li>
             <div>
-              <span>>Вход</span>
+              <span>Вход</span>
               <img src="img/entrance.svg" alt="Кнопка входа">
             </div>
 
@@ -171,6 +171,7 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="email-mailing-form">
             <input type="email" name="email" id="email" autocomplete="on" placeholder="Электронная почта">
+            <label for="email visually-hidden">Ваша электронная почта</label>
           </div>
           <div class="buttons button-mailing-form">
             <input type="submit" value="Отправить">
@@ -207,19 +208,22 @@
     </footer>
 
     <section class="feedback-form">
-      <form action="https://echo.htmlacademy.ru" method="get">
+      <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend class="visually-hidden">Форма обратной связи</legend>
           <p>Мы обязательно вам ответим!</p>
-          <a href=""  class="visually-hidden">Кнопка закрыть</a>
+          <button class="visually-hidden">Кнопка закрыть</button>
           <div>
-            <input type="text" name="name" placeholder="Как вас зовут?">
+            <input type="text" name="name" id="feedback-name-id" placeholder="Как вас зовут?">
+            <label for="feedback-name-id visually-hidden">Ваше имя</label>
           </div>
           <div>
-            <input type="email" name="email" placeholder="Ваша почта для ответа?">
+            <input type="email" name="email" <id="feedback-email-id" placeholder="Ваша почта для ответа?">
+            <label for="feedback-email-id visually-hidden">Ваш email</label>
           </div>
           <div>
-            <textarea placeholder="Напишите что-нибудь..." rows="7" cols="50"></textarea>
+            <textarea id="letter" placeholder="Напишите что-нибудь..." rows="7" cols="50"></textarea>
+            <label for="letter visually-hidden">Ваши комментарии</label>
           </div>
           <div>
             <input type="submit" value="Отправить">
