@@ -15,33 +15,87 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси Шоп">
         </a>
+
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a>
+          <li><a href="#">Каталог</a>
             <ul class="catalog-box">
-              <li><a href="#1">Новинки</a></li>
-              <li><a href="#2">Сливочное</a></li>
-              <li><a href="#3">Щербеты</a></li>
-              <li><a href="#3">Фруктовый лед</a></li>
-              <li><a href="#3">Мелорин</a></li>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
           <li><a href="shipping-payment.html">Доставка и оплата</a></li>
           <li><a href="info.html">О компании</a></li>
         </ul>
+
         <ul class="additional-navigation">
           <li>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <button type="button" name="serch">
+            <div class="button" tabindex="0">
                 <img src="img/loupe.svg" alt="Кнопка поиска">
-              </button>
+            </div>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <input type="text" name="serch" id="serch" placeholder="Что ищем?">
+              <label class="visually-hidden" for="serch">Поле для поиска</label>
             </form>
           </li>
           <li>
-            <a href="entrance.html"><img src="img/entrance.svg" alt="Кнопка входа">Вход</a>
+            <div>
+              <span>>Вход</span>
+              <img src="img/entrance.svg" alt="Кнопка входа">
+            </div>
+
+            <section class="login-form">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                  <legend class="visually-hidden">Форма входа</legend>
+                  <div>
+                    <input type="email" name="email" id="email-id" placeholder="Электронная почта">
+                    <label for="email-id">Электронная почта</label>
+                  </div>
+                  <div>
+                    <input type="password" name="password" id="password-id" placeholder="Пароль">
+                    <label for="password-id">Пароль</label>
+                  </div>
+                  <div>
+                    <input type="submit" value="Войти">
+                  </div>
+                </fieldset>
+              </form>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </section>
           </li>
+
           <li>
-            <a href="basket.html"><img src="img/basket-red.svg" alt="Кнопка корзины">Корзина</a>
+            <a href="basket.html"><img src="img/basket-red.svg" alt="Кнопка корзины">2 товара</a>
+            <section class="basket-form">
+              <table>
+                <tr class="visually-hidden">
+                  <td>Убрать из корзины</td>
+                  <td>Вид мороженого</td>
+                  <td>Вес и цена</td>
+                  <td>Стоимость</td>
+                </tr>
+                <tr>
+                  <td><a href="" class="visually-hidden">Убрать из корзины</a></td>
+                  <td><img src="img/product1.jpg" width="26" height="26" alt="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</td>
+                  <td>1,5кг * 200 руб.</td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><a href="" class="visually-hidden">Убрать из корзины</a></td>
+                  <td><img src="img/product3.jpg" width="26" height="26" alt="Сливочно-клубничное с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг * 300 руб.</td>
+                  <td>450 руб.</td>
+                </tr>
+              </table>
+              <p>Итого: 750 руб.</p>
+              <a href="">Оформить заказ</a>
+            </section>
           </li>
+
         </ul>
       </nav>
 
@@ -211,10 +265,12 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current">1</li>
-          <li class="pagination-item "><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="" class="visually-hidden">Кнопка назад на страницу</a></li>
+          <li class="pagination-item visually-hidden">Страница №1</li>
+          <li class="pagination-item"><a href="#" class="visually-hidden">Страница №2</a></li>
+          <li class="pagination-item"><a href="#" class="visually-hidden">Страница №3</a></li>
+          <li class="pagination-item"><a href="#" class="visually-hidden">Страница №4</a></li>
+          <li class="pagination-item"><a href="" class="visually-hidden">Кнопка вперед на страницу</a></li>
         </ul>
       </section>
     </main>
@@ -236,30 +292,6 @@
         <p class="footer-copyright"><a class="button" href="https://up.htmlacademy.ru/htmlcss/22"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип htmlacademy">Сделано в HTML Academy</a> &#169; 2017</p>
       </div>
     </footer>
-
-    <section class="basket-form">
-      <table>
-        <tr class="visually-hidden">
-          <td>Вид мороженого</td>
-          <td>Вес и цена</td>
-          <td>Стоимость</td>
-        </tr>
-        <tr>
-          <td><img src="img/product1.jpg" width="26" height="26" alt="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</td>
-          <td>1,5кг * 200 руб.</td>
-          <td>300 руб.</td>
-        </tr>
-        <tr>
-          <td><img src="img/product3.jpg" width="26" height="26" alt="Сливочно-клубничное с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</td>
-          <td>1,5 кг * 300 руб.</td>
-          <td>450 руб.</td>
-        </tr>
-      </table>
-      <p>Итого: 750 руб.</p>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <button type="submit">Оформить заказ</button>
-      </form>
-    </section>
 
   </body>
 </html>

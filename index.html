@@ -15,13 +15,13 @@
       <nav class="main-navigation">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси Шоп">
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a>
+          <li><a href="#">Каталог</a>
             <ul class="catalog-box">
-              <li><a href="#1">Новинки</a></li>
-              <li><a href="#2">Сливочное</a></li>
-              <li><a href="#3">Щербеты</a></li>
-              <li><a href="#3">Фруктовый лед</a></li>
-              <li><a href="#3">Мелорин</a></li>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
           <li><a href="shipping-payment.html">Доставка и оплата</a></li>
@@ -29,17 +29,44 @@
         </ul>
         <ul class="additional-navigation">
           <li>
-          <form action="https://echo.htmlacademy.ru" method="post">
-           <button type="button" name="serch">
-             <img src="img/loupe.svg" alt="Кнопка поиска">
-           </button>
-         </form>
+            <div class="button" tabindex="0">
+                <img src="img/loupe.svg" alt="Кнопка поиска">
+            </div>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <input type="text" name="serch" id="serch" placeholder="Что ищем?">
+              <label class="visually-hidden" for="serch">Поле для поиска</label>
+            </form>
           </li>
           <li>
-            <a href="entrance.html"><img src="img/entrance.svg" alt="Кнопка входа">Вход</a>
+            <div>
+              <span>>Вход</span>
+              <img src="img/entrance.svg" alt="Кнопка входа">
+            </div>
+
+            <section class="login-form">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                  <legend class="visually-hidden">Форма входа</legend>
+                  <div>
+                    <input type="email" name="email" id="email-id" placeholder="Электронная почта">
+                    <label for="email-id">Электронная почта</label>
+                  </div>
+                  <div>
+                    <input type="password" name="password" id="password-id" placeholder="Пароль">
+                    <label for="password-id">Пароль</label>
+                  </div>
+                  <div>
+                    <input type="submit" value="Войти">
+                  </div>
+                </fieldset>
+              </form>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </section>
           </li>
+
           <li>
-            <a href="basket.html"><img src="img/basket-red.svg" alt="Кнопка корзины">Корзина</a>
+            <a href="basket.html"><img src="img/basket.svg" alt="Кнопка корзины">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -184,6 +211,7 @@
         <fieldset>
           <legend class="visually-hidden">Форма обратной связи</legend>
           <p>Мы обязательно вам ответим!</p>
+          <a href=""  class="visually-hidden">Кнопка закрыть</a>
           <div>
             <input type="text" name="name" placeholder="Как вас зовут?">
           </div>
@@ -199,32 +227,6 @@
         </fieldset>
       </form>
     </section>
-
-     <section class="login-form">
-       <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend class="visually-hidden">Форма входа</legend>
-          <div>
-            <input type="email" name="email" placeholder="Электронная почта">
-          </div>
-          <div>
-            <input type="password" name="password" placeholder="Пароль">
-          </div>
-          <div>
-            <input type="submit" value="Войти">
-          </div>
-        </fieldset>
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
-      </form>
-    </section>
-
-    <section>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <input type="text" name="serch" id="serch" placeholder="Что ищем?">
-        <label class="visually-hidden" for="serch">Поле для поиска</label>
-      </form>
-    </section>>
 
   </body>
 </html>
