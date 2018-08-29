@@ -8,10 +8,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
+
     <header class="main-header">
       <h1 class="visually-hidden">Глэйси Шоп</h1>
       <nav class="main-navigation">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси Шоп">
+
         <ul class="site-navigation">
           <li><a href="#">Каталог</a>
             <ul class="catalog-box">
@@ -25,46 +28,21 @@
           <li><a href="">Доставка и оплата</a></li>
           <li><a href="">О компании</a></li>
         </ul>
+
         <ul class="additional-navigation">
           <li>
             <div class="navigation-button" tabindex="0">
                 <img src="img/loupe.svg" alt="Кнопка поиска">
             </div>
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <input type="text" name="serch" id="serch" placeholder="Что ищем?">
-              <label class="visually-hidden" for="serch">Поле для поиска</label>
-            </form>
           </li>
           <li>
             <div class="navigation-button"tabindex="0">
               <span>Вход</span>
-              <img src="img/entrance.svg" alt="Кнопка входа">
+              <img src="" alt="Кнопка входа">
             </div>
-
-            <section class="login-form">
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <fieldset>
-                  <legend class="visually-hidden">Форма входа</legend>
-                  <div>
-                    <input type="email" name="email" id="email-id" placeholder="Электронная почта">
-                    <label for="email-id">Электронная почта</label>
-                  </div>
-                  <div>
-                    <input type="password" name="password" id="password-id" placeholder="Пароль">
-                    <label for="password-id">Пароль</label>
-                  </div>
-                  <div>
-                    <input class="button" type="submit" value="Войти">
-                  </div>
-                </fieldset>
-              </form>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </section>
           </li>
-
           <li>
-            <a href="basket.html"><img src="img/basket.svg" alt="Кнопка корзины">Корзина</a>
+            <a href="basket.html"><img src="" alt="Кнопка корзины">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -75,8 +53,8 @@
       </div>
     </header>
 
-    <main class="container">
 
+    <main class="container">
       <section class="slides">
         <h2>Крем брюле и пломбир с малиновым джемом</h2>
           <img src="img/fon-1.png" width="1045" height="881" alt="Крем брюле и пломбир с малиновым джемом">
@@ -106,34 +84,34 @@
       <section>
         <h2 class="visually-hidden">Хиты</h2>
         <ul class="hits">
-          <li>
+          <li class="catalog-item">
             <img src="img/product1.jpg" width="267" height="267" alt="Сливочное мороженое">
             <span>310 &#8381;/кг</span>
-            <a class="product" href="card-product1.html">
+            <a class="link" class="product" href="card-product1.html">
               <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             </a>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
-          <li>
+          <li class="catalog-item">
             <img src="img/product2.jpg" width="267" height="267" alt="Сливочное мороженое">
             <span>380 &#8381;/кг</span>
-            <a href="card-product2.html">
+            <a class="link" href="card-product2.html">
               <p>Сливочно-кофейное с кусочками шоколада</p>
             </a>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
-          <li>
+          <li class="catalog-item">
             <img src="img/product3.jpg" width="267" height="267" alt="Сливочное мороженое">
-            <a href="card-product3.html">
-              <span>355 &#8381;/кг</span>
+            <span>355 &#8381;/кг</span>
+            <a class="link" href="card-product3.html">
               <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
             </a>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
-          <li>
+          <li class="catalog-item">
             <img src="img/product4.jpg" width="267" height="267" alt="Сливочное мороженое">
             <span>415 &#8381;/кг</span>
-            <a href="card-product4.html">
+            <a class="link" class="link" href="card-product4.html">
               <p>Сливочное крем-брюле с карамельной подливкой</p>
             </a>
             <a class="button" href="#">Быстрый просмотр</a>
@@ -163,7 +141,7 @@
       <section class="new-in-blog">
         <h2 class="new">Новое в нашем блоге</h2>
         <a href="blog/new.html">
-          <p>10 способов сервировки фруктовых щербетов к столу</p>
+        10 способов сервировки фруктовых щербетов к столу
         </a>
       </section>
 
@@ -191,6 +169,7 @@
       </section>
     </main>
 
+
     <footer class="main-footer">
       <ul class="social-buttons">
         <li><a class="social-button visually-hidden" href="#">Твиттер</a></li>
@@ -209,6 +188,37 @@
       </div>
     </footer>
 
+
+    <section>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <input class="field" type="text" name="serch" id="serch" placeholder="Что ищем?">
+        <label class="visually-hidden" for="serch">Поле для поиска</label>
+      </form>
+    </section>
+
+
+    <section class="login-form">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend class="visually-hidden">Форма входа</legend>
+          <div>
+            <input class="field" type="email" name="email" id="email-id" placeholder="Электронная почта">
+            <label for="email-id">Электронная почта</label>
+          </div>
+          <div>
+            <input class="field" type="password" name="password" id="password-id" placeholder="Пароль">
+            <label for="password-id">Пароль</label>
+          </div>
+          <div>
+            <input class="button" type="submit" value="Войти">
+          </div>
+        </fieldset>
+      </form>
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+    </section>
+
+
     <section class="feedback-form">
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
@@ -216,15 +226,15 @@
           <p>Мы обязательно вам ответим!</p>
           <button class="visually-hidden">Кнопка закрыть</button>
           <div>
-            <input type="text" name="name" id="feedback-name-id" placeholder="Как вас зовут?">
+            <input class="field" type="text" name="name" id="feedback-name-id" placeholder="Как вас зовут?">
             <label for="feedback-name-id visually-hidden">Ваше имя</label>
           </div>
           <div>
-            <input type="email" name="email" id="feedback-email-id" placeholder="Ваша почта для ответа?">
+            <input class="field" type="email" name="email" id="feedback-email-id" placeholder="Ваша почта для ответа?">
             <label for="feedback-email-id visually-hidden">Ваш email</label>
           </div>
           <div>
-            <textarea id="letter" placeholder="Напишите что-нибудь..." rows="7" cols="50"></textarea>
+            <textarea class="field" id="letter" placeholder="Напишите что-нибудь..." rows="7" cols="50"></textarea>
             <label for="letter visually-hidden">Ваши комментарии</label>
           </div>
           <div>
