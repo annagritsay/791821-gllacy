@@ -1,4 +1,4 @@
-body {
+ body {
   margin: 0;
   padding: 0;
 
@@ -7,11 +7,20 @@ body {
   line-height: 22px;
   font-weight: 500;
   color: #ffffff;
-  background-color: #849d8f;
 }
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.index-page {
+  background-color: #849d8f;
+  background-image: url("../img/fon-1.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.inner-page {
+  background-color: #849d8f;
 }
 
 
@@ -31,7 +40,7 @@ a {
   box-shadow: 0px 2px 2px 0 rgb(172, 16, 0);
 }
 .button:active {
- background-image: linear-gradient(to bottom, rgb(231, 74, 53), rgb(242, 104, 67)), linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+  background-image: linear-gradient(to bottom, rgb(231, 74, 53), rgb(242, 104, 67)), linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
   box-shadow: inset 0px 2px 2px 0 rgb(148, 39, 24);
 }
 
@@ -59,20 +68,60 @@ a {
 
 
 /*Хэдэр*/
+.main-header {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-right: 27px;
+  padding-left: 27px;
+}
+.index-page .main-header {
+  margin-bottom: 276px;
+}
+.inner-page .main-header {
+  margin-bottom: 10px;
+}
+.main-navigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.site-navigation,
+.catalog-box,
+.additional-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.logo {
+  margin-right: auto;
+  padding-top: 9px;
+}
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 355px;
+  margin-right: 373px;
+  padding-top: 30px;
   font-size: 16px;
-  line-height: 18px;
   font-weight: 700;
 }
 .additional-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 245px;
+  margin-left: auto;
+  padding-top: 31px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
 }
+.header-working-hours,
 .working-hours {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
 }
 .working-hours {
   font-size: 14px;
@@ -83,11 +132,6 @@ a {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
-}
-.site-navigation,
-.catalog-box,
-.additional-navigation {
-  list-style: none;
 }
 .main-navigation a:hover,
 .main-navigation a:focus,
@@ -110,24 +154,75 @@ a {
   color: #323232;
 }
 .catalog-box a:first-of-type {
-   font-weight: 400;
+  display: none;
+  font-weight: 400;
 }
 .catalog-box a:hover,
- .catalog-box a:focus {
+.catalog-box a:focus {
   background-color: #fbded7;
 }
  .catalog-box a:active {
   background-color: #f6b5a5;
 }
+/*Страница каталога.
+Нижняя часть хэдэра*/
+.working-hours-and-way {
+  display: flex;
+  justify-content: space-between;
+}
+.way {
+  display: flex;
+  width: 223px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-top: auto;
+}
+.way {
+  list-style: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.way a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 
+
+/*Контейнер*/
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-right: 27px;
+  padding-left: 27px;
+}
+.page-title {
+  margin: 0;
+  padding: 0;
+}
 
 /*Слайдер*/
+.slides {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 41px;
+}
 .slides h2 {
   font-size: 59.5px;
   line-height: 59.5px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
 }
 .slides .button {
+  margin-left: auto;
+  margin-right: auto;
   font-size: 32px;
   line-height: 43.5px;
   font-weight: 700;
@@ -136,34 +231,43 @@ a {
 
 
 /*Специальные предложения*/
-.special-offers-list {
+.special-offers {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin-bottom: 42px;
 }
 .special-offers-one {
+  width: 560px;
   color: #ffffff;
-  background-color: #dc143c;
   background-image: url("../img/fon-raspberry.jpg");
-  background-position: 0 0;
+  border-radius: 20px;
+  background-color: #dc143c;
   background-repeat: no-repeat;
 }
 .special-offers-two {
+  width: 560px;
   color: #ffffff;
   background-color: #d2691e;
   background-image: url("../img/fon-chocolate.jpg");
-  background-position: 0 0;
+  border-radius: 20px;
   background-repeat: no-repeat;
 }
-.special-offers-one h3 {
+.special-offers h3 {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
-.special-offers-one p {
+.special-offers p {
   font-size: 18.5px;
   line-height: 21.5px;
   font-weight: 700;
 }
-.special-offers-list .button {
+.special-offers .button {
   font-size: 18.5px;
   line-height: 24.5px;
   font-weight: 700;
@@ -171,53 +275,124 @@ a {
 
 
 /*Хиты, Каталог*/
-.hits,
-.catalog-list {
+.hits {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 39px;
 }
-.hits span,
-.catalog-list span {
+.catalog {
+  margin-bottom: 110px;
+}
+.hits-list,
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+.catalog-item {
+  display: block;
+  padding-top: 20px;
+}
+.catalog-item div {
+  position: relative;
+  bottom: 60px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
-.hits p,
+.catalog-item .kg {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+.hits-list p,
 .catalog-list p {
+  text-align: center;
   font-size: 17px;
   line-height: 21.5px;
   font-weight: 500;
+  padding: 0;
+  margin: 0;
+
+}
+.catalog-item {
+  width: 267px;
+}
+.catalog-item img {
+object-fit: contain;
+border-radius: 135px;
+}
+.hits .button,
+.catalog-list .button {
+  display: none;
 }
 .catalog-item:hover,
 .catalog-item:focus {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+
 /*Преимущества*/
 .features {
+  width: 1146px;
   color: #323232;
   background-image: url("../img/waffle.jpg");
   background-color: #f5deb3;
   background-position: auto;
   background-repeat: repeat;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
 }
-.features p {
+.features>p {
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+  margin: 0;
+  padding-left: 19px;
 }
 .features-list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.features-list div {
+  width: 560px;
+  padding:
 }
 .features-list p {
+  width: 470px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
 }
 
+.feature-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /*Новое в нашем блоге*/
+.new-and-form {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 27px;
+  margin-right: 27px;
+  margin-bottom: 40px;
+}
 .new-in-blog {
+  width: 560px;
   color: #323232;
   background-image: url("../img/fon-strawberry.jpg");
   background-color: #ffffff;
@@ -229,13 +404,13 @@ a {
   line-height: 30px;
   font-weight: 700;
   color: rgb(50, 50, 50);
-  border-bottom: 2px solid rgba(50, 50, 50, 0.3);
+  border-bottom: 2px solid rgb(50, 50, 50);
 }
 .new-in-blog a:hover,
 .new-in-blog a:focus,
 .new-in-blog a:active {
   color: rgb(232, 77, 55);
-  border-bottom: 2px solid rgba(232, 77, 55, 0.3);
+  border-bottom: 2px solid rgb(232, 77, 55);
 }
 .new-in-blog h2 {
   font-size: 16px;
@@ -246,6 +421,7 @@ a {
 
 /*Рассылка*/
 .mailing-form {
+  width: 560px;
   background-color: #f8f7f4;
   font-size: 16px;
   line-height: 22px;
@@ -258,8 +434,18 @@ a {
 }
 
 
-/*Адрес*/
+/*Адрес, карта*/
+.map {
+  width: 100%;
+  height: 430px;
+  margin-bottom: 19px;
+}
 .adress {
+  position: relative;
+  bottom: 380px;
+  left: 860px;
+  width: 302px;
+  min-height: 304px;
   background-color: #ffffff;
   color: #323232;
 }
@@ -267,6 +453,9 @@ a {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  padding-left: 24px;
+  padding-top: 33px;
+  padding-bottom: 28px;
 }
 .adress span:first-of-type {
   font-size: 18px;
@@ -281,17 +470,49 @@ a {
 
 
 /*Футер*/
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.copyright,
+.social-buttons {
+  width: 200px;
+}
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 330px;
+  padding-left: 220px;
+  padding-right: 130px;
+}
+.footer-navigation li {
+  padding-left: 30px;
+}
+.social-buttons {
+  display: flex;
+  padding: 0;
+  margin-left: 27px;
+}
 .footer-navigation,
 .social-buttons {
   list-style: none;
 }
-.main-footer a:last-of-type {
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+.social-buttons {
+  margin: 0;
+}
+.social-buttons li {
+  margin-right: 13px;
+}
+.copyright {
+  margin-left: auto;
 }
 .footer-copyright {
+
   color: #fefefe;
   font-size: 12px;
   line-height: 18px;
@@ -299,8 +520,22 @@ a {
 }
 
 
+/*Поиск*/
+.serch {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  background-color: #f8f7f4;
+}
+
+
 /*Форма обратной связи*/
 .feedback-form {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 30%;
   background-color: #f8f7f4;
 }
 .feedback-form p {
@@ -320,6 +555,10 @@ a {
 
 /*Форма входа*/
 .login-form {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 30%;
   background-color: rgb(248, 247, 244);
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
@@ -337,26 +576,68 @@ a {
   border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
+
+
 /*
-Каталог
 Фильтры
 */
+.filters {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 41px;
+}
+.filters-1-line {
+  display: flex;
+  width: 853px;
+  justify-content: space-between;
+}
+.sort {
+  width: 193px;
+}
+.range {
+  width: 222px;
+}
+.filters-1-line fieldset{
+  width: 418px;
+}
+.fat {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+.filters-2-line {
+  display: flex;
+  width: 853px;
+  justify-content: space-between;
+}
+.filters-2-line .additive {
+  display: flex;
+  justify-content: space-around;
+  width: 702px;
+  padding: 0;
+  margin: 0;
+}
+.filters-2-line fieldset {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.filters-button {
+  margin-top: auto;
+  width: 145px;
+  height: 36px;
+}
 .container h1 {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
-.way {
-  list-style: none;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-}
-.way a {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-.filters label,
-.filters legend {
+
+.sort label {
   list-style: none;
   font-size: 14px;
   line-height: 16px;
@@ -377,8 +658,7 @@ a {
 }
 .fat,
 .additive,
-.filters select,
-.filters .range {
+.filters select {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -390,10 +670,12 @@ a {
   color: rgb(50, 50, 50);
   background-color: rgb(255, 255, 255);
 }
-.filters div:first-of-type:hover,
+
+/*.filters div:first-of-type:hover,
 .filters div:first-of-type:focus {
   color: rgb(50, 50, 50);
-}
+}*/
+
 .filters-button {
   background-color: #849d8f;
   color: #ffffff;
@@ -415,16 +697,29 @@ a {
   color: rgb(50, 50, 50);
 }
 
+
 /*Нумерация стр*/
+.pagination {
+  margin-bottom: 40px;
+}
 .pagination-list {
+  display: flex;
+  margin: 0;
+  width: 150px;
+  margin-left: auto;
   list-style: none;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+
+}
+.pagination-item {
+  margin-left: auto;
 }
 .pagination-item a {
   color: rgb(255, 255, 255);
   background-color: rgb(132, 157, 143);
+  margin-left: 20px;
 }
 .pagination-item-current {
   color: rgb(50, 50, 50);
@@ -446,6 +741,12 @@ a {
 
 /*Корзина*/
 .basket-form {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  background-color: rgb(248, 247, 244);
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
@@ -457,3 +758,15 @@ a {
 
 
 
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.slides-3,
+.slides-2 {
+  display: none;
+}
