@@ -17,17 +17,17 @@
         <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси Шоп"></a>
         </div>
         <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="#" class="link">Каталог</a>
+          <li><a class="site-navigation-current" href="#">Каталог</a>
             <ul class="catalog-box">
-              <li><a href="#">Новинки</a></li>
+              <li><a href="#" class="catalog-new">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="">Доставка и оплата</a></li>
-          <li><a href="">О компании</a></li>
+          <li><a href="" class="site-navigation-item">Доставка и оплата</a></li>
+          <li><a href="" class="site-navigation-item">О компании</a></li>
         </ul>
 
         <ul class="additional-navigation">
@@ -71,27 +71,17 @@
 
              <div class="filters-1-line">
 
-              <!--- <div class="sort">
-                <ul>
-                  <li class="sort-name" tabindex="0">Сортировка</li>
-                    <ul class="sort-view">
-                      <li>по популярности</li>
-                      <li>сначала недорогие</li>
-                      <li>сначала дорогие</li>
-                      <li>по жирности</li>
-                    </ul>
-                </ul>
-              </div> -->
-              <div class="sort-wrapper"></div>
               <div class="sort">
-              <label for="sort">Сортировка</label>
-              <select id="sort" name="sort">
-                <option value="popularity">по популярности</option>
-                <option value="increase-price">сначала недорогие</option>
-                <option value="decrease-price">сначала дорогие</option>
-                <option value="fat">по жирности</option>
-              </select>
-            </div>
+                <label for="sort">Сортировка:</label>
+                <select id="sort" name="sort">
+                  <option value="popularity">по популярности</option>
+                  <option value="increase-price">сначала недорогие</option>
+                  <option value="decrease-price">сначала дорогие</option>
+                  <option value="fat">по жирности</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 9 5"><path fill="#FFF" d="M4.5 5L0 0h9z"/></svg>
+              </div>
+
               <div class="filter-range">
                 <div class="filter-range-title">Цена: 100 руб. - 500 руб.</div>
                 <div class="filter-range-box">
@@ -104,7 +94,6 @@
                   </div>
                 </div>
               </div>
-
 
               <fieldset>
                 <legend>Жирность</legend>
