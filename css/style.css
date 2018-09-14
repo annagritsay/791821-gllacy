@@ -3,9 +3,9 @@
   padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
   color: #ffffff;
 }
 a {
@@ -13,7 +13,7 @@ a {
   color: #ffffff;
 }
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -229,6 +229,10 @@ img {
   width: 1146px;
   margin: 0 auto;
 }
+.main-header img {
+  width: 154px;
+  height: 64px;
+}
 .site-wrapper .main-header {
   margin-bottom: 275px;
 }
@@ -277,6 +281,11 @@ img {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+}
+.main-navigation p {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .logo a {
   list-style: none;
@@ -359,6 +368,8 @@ img {
   background-color: #d07058;
   color: #ffffff;
   padding-top: 7px;
+}
+.site-navigation-catalog {
   padding-bottom: 7px;
   padding-right: 13px;
   padding-left: 13px;
@@ -377,6 +388,7 @@ img {
 .additional-navigation a:focus {
   background-color: rgb(247, 246, 243);
   color:#323232;
+  text-decoration: none;
 }
 
 .site-navigation a:active,
@@ -388,11 +400,11 @@ img {
   position: absolute;
   top: 58px;
   left: 0;
-  display: none;
   background-color: rgb(248, 247, 244);
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   padding-bottom: 11px;
-  border-radius: 10px;
+  border-radius: 5px;
+  display: none;
 }
 .site-navigation > li:hover .catalog-box {
   display: block;
@@ -400,17 +412,26 @@ img {
 
 .catalog-box a {
   list-style: none;
+  margin: 0;
+  padding: 7px 20px;
+  list-style: none;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #323232;
+}
+.catalog-box svg {
+  position: absolute;
   margin: 0;
-  padding: 7px 20px;
+  padding: 0;
+  top: 45px;
 }
 .catalog-box .catalog-new {
   margin-top: 6px;
-  padding-bottom: 15px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
+
 .catalog-box a:hover,
 .catalog-box a:focus {
   background-color: #fbded7;
@@ -1213,7 +1234,7 @@ select::-ms-expand {
   cursor: pointer;
 }
 .range-toggle:hover {
-  background: #1c4f80;
+  transform: scale(1.1);
 }
 .range-toggle-min {
   left: 10%;
@@ -1281,7 +1302,10 @@ select::-ms-expand {
   background-position: 0 0;
   cursor: pointer;
 }
-
+.fat-input-radio:checked + label:hover::after,
+.fat-input-radio + label:hover::before {
+  opacity: 1;
+}
 
 
 .filters-2-line {
@@ -1350,6 +1374,10 @@ fieldset legend {
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
+}
+.additive-input-checkbox:checked + label:hover::after,
+.additive-input-checkbox + label:hover::before {
+  opacity: 1;
 }
 
 
