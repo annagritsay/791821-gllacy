@@ -9,11 +9,6 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
-img {
-  width: 100%;
-  height: auto;
-}
-
 
 .site-wrapper {
   min-width: 1200px;
@@ -118,7 +113,7 @@ img {
   text-align: center;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 41px;
+  margin-bottom: 42px;
 }
 .slider-list {
   margin: 0;
@@ -517,49 +512,51 @@ img {
 
 }
 .special-offers-one {
-  width: 512px;
+  width: 560px;
   color: #ffffff;
   background-image: url("../img/fon-raspberry.jpg");
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: #7f0715;
   background-repeat: no-repeat;
   padding-left: 19px;
-  padding-right: 29px;
+  padding-right: 21px;
 }
 .special-offers-two {
-  width: 512px;
-  color: #ffffff;
+  width: 560px;
+  box-sizing: border-box;
   background-color: #48342e;
   background-image: url("../img/fon-chocolate.jpg");
-  border-radius: 20px;
+  border-radius: 15px;
   background-repeat: no-repeat;
   padding-left: 19px;
   padding-right: 29px;
 }
 .special-offers h3 {
-  font-size: 35px;
+  font-size: 34.5px;
   line-height: 41px;
   font-weight: 700;
+  letter-spacing: 0.01em;
   margin: 0;
   padding: 0;
-  padding-top: 19px;
+  padding-top: 17px;
 }
 .special-offers p {
-  font-size: 18px;
+  font-size: 17.4px;
   line-height: 22px;
-  font-weight: 700;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   margin: 0;
   padding: 0;
-  padding-top: 16px;
-  padding-bottom: 43px;
+  padding-top: 14px;
+  padding-bottom: 44px;
 }
 .special-offers .button {
   display: block;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding: 10px 23px;
-  margin-bottom: 22px;
+  padding: 11px 22px;
+  margin-bottom: 23px;
 }
 .special-offers-one .button {
   width: 120px;
