@@ -694,10 +694,10 @@ a {
   background-position: auto;
   background-repeat: repeat;
   margin-bottom: 40px;
-  padding-top: 26px;
+  padding-top: 25px;
   padding-right: 20px;
   padding-left: 20px;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .features>p {
   font-size: 24px;
@@ -726,22 +726,23 @@ a {
 }
 .feature-item p {
   position: relative;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 16.4px;
+  line-height: 22.5px;
   font-weight: 400;
-  padding-left: 55px;
+  letter-spacing: -0.01em;
+  padding-left: 56px;
   margin: 0;
-  padding-top: 23px;
+  padding-top: 20px;
 }
 .feature-item:last-child p {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 .feature-item-one p::after {
   content: "";
 
   position: absolute;
-  left: 0px;
-  top: 10px;
+  left: -1px;
+  top: 7px;
 
 
   width: 49px;
