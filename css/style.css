@@ -3,9 +3,6 @@
   padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
   color: #ffffff;
 }
 a {
@@ -243,7 +240,6 @@ img {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 18px;
 }
 .site-navigation,
 .catalog-box,
@@ -263,9 +259,7 @@ img {
   flex-wrap: wrap;
   width: 586px;
   margin-right: 100px;
-  padding-top: 22px;
-  font-size: 16px;
-  font-weight: 700;
+  padding-top: 23px;
 }
 .additional-navigation {
   display: flex;
@@ -276,16 +270,16 @@ img {
 }
 .main-navigation a {
   display: block;
-  margin-left: 13px;
   vertical-align: middle;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
 }
 .main-navigation p {
+  list-style: none;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 400;
 }
 .logo a {
   list-style: none;
@@ -296,15 +290,16 @@ img {
   display: block;
   vertical-align: middle;
   font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   margin-left: 10px;
   padding-right: 17px;
-  padding-left: 45px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-left: 43px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
+  border-radius: 20px;
 }
 .additional-navigation .basket-red {
   color: #000000;
@@ -315,7 +310,7 @@ img {
 }
 .login-link svg {
   position: absolute;
-  left: 17px;
+  left: 16px;
   top: 6px;
   width: 21px;
   height: 19px;
@@ -327,7 +322,7 @@ img {
 .basket svg,
 .basket-red svg {
   position: absolute;
-  left: 17px;
+  left: 16px;
   top: 6px;
   width: 21px;
   height: 20px;
@@ -340,10 +335,10 @@ img {
 }
 .loupe svg {
   position: absolute;
-  left: 6px;
-  top: 6px;
-  width: 21px;
-  height: 19px;
+  left: 8px;
+  top: 7px;
+  width: 17px;
+  height: 17px;
 }
 .login-link:hover,
 .login-link:focus,
@@ -372,15 +367,18 @@ img {
 .site-navigation-catalog {
   padding-bottom: 7px;
   padding-right: 13px;
-  padding-left: 13px;
+  padding-left: 16px;
   border-radius: 20px;
 }
 .site-navigation-item {
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-right: 13px;
-  padding-left: 13px;
+  padding-right: 6px;
+  padding-left: 9px;
   border-radius: 20px;
+}
+.site-navigation-item:first-child {
+  margin-left: 13px;
 }
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -443,18 +441,20 @@ img {
 .header-working-hours,
 .working-hours {
   margin: 0;
+  padding: 0;
   margin-left: auto;
 }
 .working-hours {
   font-size: 14px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: right;
 }
 .phone-number {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
+  margin-top: 6px;
 }
 /*Страница каталога.
 Нижняя часть хэдэра*/
