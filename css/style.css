@@ -133,24 +133,28 @@ img {
   font-weight: 700;
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 .slide .button {
   display: inline-block;
-  padding: 12px 44px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
 
   font-weight: 600;
   font-size: 31px;
-  line-height: 41px;
+  line-height: 31px;
   text-align: center;
   color: #ffffff;
+  letter-spacing: 0.02em;
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  border-radius: 50px;
+  border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
 
@@ -169,8 +173,8 @@ img {
 .slider-controls {
   position: absolute;
 
-  bottom: 63px;
-  left: 10px;
+  bottom: 21px;
+  left: 0;
   z-index: 20;
   font-size: 0;
   margin-right: auto;
