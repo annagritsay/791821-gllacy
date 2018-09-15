@@ -513,6 +513,7 @@ a {
 }
 .special-offers-one {
   width: 560px;
+  box-sizing: border-box;
   color: #ffffff;
   background-image: url("../img/fon-raspberry.jpg");
   border-radius: 15px;
