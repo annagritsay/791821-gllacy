@@ -447,7 +447,7 @@ a {
 .working-hours {
   margin: 0;
   padding: 0;
-  font-size: 14.3px;
+  font-size: 14px;
   line-height: 15px;
   font-weight: 400;
   text-align: right;
@@ -533,7 +533,7 @@ a {
   padding-right: 21px;
 }
 .special-offers h3 {
-  font-size: 34.8px;
+  font-size: 35px;
   line-height: 40px;
   font-weight: 500;
   letter-spacing: 0.005em;
@@ -542,7 +542,7 @@ a {
   padding-top: 16px;
 }
 .special-offers p {
-  font-size: 17.4px;
+  font-size: 17.5px;
   line-height: 22px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -604,6 +604,23 @@ a {
   width: 267px;
   margin-bottom: 40px;
 }
+.hits-list .catalog-item::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 5px;
+
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url("../img/hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 3;
+
+}
 .catalog-item div {
   position: absolute;
   width: 267px;
@@ -650,7 +667,7 @@ a {
   padding: 0;
 }
 .catalog-item a {
-  font-size: 16.1px;
+  font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   padding: 0;
@@ -665,7 +682,6 @@ a {
 }
 
 .catalog-item-contener img {
-  object-fit: contain;
   border-radius: 135px;
   margin-bottom: 8px;
 }
@@ -700,7 +716,7 @@ a {
   border-radius: 15px;
 }
 .features>p {
-  font-size: 24.2px;
+  font-size: 24px;
   line-height: 30px;
   font-weight: 500;
   letter-spacing: 0.015px;
@@ -727,10 +743,9 @@ a {
 }
 .feature-item p {
   position: relative;
-  font-size: 16.4px;
-  line-height: 22.5px;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 400;
-  letter-spacing: -0.01em;
   padding-left: 56px;
   margin: 0;
   padding-top: 20px;
@@ -834,10 +849,10 @@ a {
   background-position: auto;
   background-repeat: no-repeat;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 23px;
   padding-right: 255px;
-  padding-bottom: 83px;
-  border-radius: 20px;
+  padding-bottom: 80px;
+  border-radius: 15px;
 }
 .new-in-blog a {
   font-size: 24px;
@@ -868,7 +883,7 @@ a {
   box-sizing: border-box;
   background-color: #f8f7f4;
   background-image: url("../img/post-background.png");
-  padding: 4px;
+  padding: 5px 5px 5px 6px;
   border-radius: 13px;
 }
 .mailing-form form {
@@ -877,7 +892,10 @@ a {
 }
 .mailing-form > div {
   background-color: #f8f7f4;
-  padding: 31px 21px;
+  padding-top: 29px;
+  padding-bottom: 36px;
+  padding-left: 20px;
+  padding-right: 21px;
   border-radius: 13px;
 }
 .mailing-form p {
@@ -895,9 +913,16 @@ a {
   width: 368px;
   vertical-align: middle;
 }
+.email-mailing-form input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  border: 1px solid #d1d0ce;
+  border-radius: 5px;
+}
 .button-mailing-form {
   display: block;
-vertical-align: middle;
+  vertical-align: middle;
   float: right;
 }
 
@@ -906,32 +931,29 @@ vertical-align: middle;
   height: 44px;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 500;
   color: #fefefe;
-  padding: 0;
-  padding: 10px 17px;
+  padding: 10px 19px;
+  text-shadow: none;
 }
-.email-mailing-form input {
-  box-sizing: border-box;
-  width: 100%;
-  height: 44px;
-}
+
 /*Адрес, карта*/
 .map {
   position: relative;
   margin: 0 auto;
   align-items: center;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
   width: 1200px;
 }
 .adress {
   position: absolute;
-  bottom: 65px;
-  right: 25px;
+  bottom: 66px;
+  right: 27px;
   width: 302px;
-  min-height: 304px;
+  min-height: 305px;
   background-color: #ffffff;
   color: #323232;
+  border-radius: 15px;
 }
 .adress img {
   width: 100%;
@@ -942,26 +964,29 @@ vertical-align: middle;
   line-height: 20px;
   font-weight: 400;
   margin: 0;
-  padding-left: 24px;
-  padding-top: 33px;
-  padding-bottom: 28px;
+  padding-left: 25px;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 .adress span:first-of-type {
   display: block;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .adress span:last-of-type {
+  display: block;
+  margin-top: 3px;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 26px;
   font-weight: 700;
 }
 .adress .button {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
-  margin-left: 23px;
+  margin-left: 26px;
   padding: 10px 27px;
 }
 .map::after {
@@ -980,6 +1005,22 @@ vertical-align: middle;
   background-position: 0 0;
 
 }
+.map::before {
+  content: "";
+
+  position: absolute;
+  left: 305px;
+  top: 169px;
+
+
+  width: 182px;
+  height: 110px;
+
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
 
 /*Футер*/
 .main-footer {
@@ -992,24 +1033,24 @@ vertical-align: middle;
   font-weight: 400;
   padding-left: 27px;
   padding-right: 27px;
-  padding-bottom: 22px;
+  padding-bottom: 40px;
   padding-top: 0;
 }
 .inner-page .main-footer {
   padding: 0;
   padding-bottom: 22px;
-  padding-top: 16px;
+  padding-top: 21px;
 }
 .footer-navigation {
   display: flex;
   justify-content: space-between;
-  width: 330px;
+  width: 303px;
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-left: 220px;
+  padding-left: 224px;
   padding-right: 130px;
-  padding-top: 18px;
+  padding-top: 16px;
 }
 .footer-navigation ul {
   margin: 0;
@@ -1017,29 +1058,55 @@ vertical-align: middle;
   list-style: none;
 }
 .footer-navigation li {
-  padding-bottom: 7px;
+  padding-bottom: 4px;
 }
+.footer-navigation .suppliers {
+  position: relative;
+  font-weight: 400;
+}
+.suppliers::before {
+  content: "";
 
+  position: absolute;
+  left: -22px;
+  top: 2px;
+
+
+  width: 15px;
+  height: 13px;
+
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
 .social-buttons {
   display: flex;
   padding: 0;
-  padding-top: 21px;
+  padding-top: 19px;
+  margin: 0;
+  margin-left: 2px;
 }
-
+.social-button svg{
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  border: 2.4px solid rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+}
 .social-button:hover,
 .social-button:focus {
+  opacity: 1;
+}
+.social-button:active {
   opacity: 0.8;
 }
-
 .footer-navigation,
 .social-buttons {
   list-style: none;
 }
-.social-buttons {
-  margin: 0;
-}
 .social-buttons li {
-  margin-right: 13px;
+  margin-right: 17px;
   width: 32px;
   height: 32px;
 }
@@ -1051,7 +1118,7 @@ vertical-align: middle;
   margin: 0;
   color: #fefefe;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 17px;
   font-weight: 400;
 }
 
