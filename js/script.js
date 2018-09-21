@@ -17,3 +17,13 @@
     overlay.classList.remove("overlay-active");
   });
 
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (feedback.classList.contains("feedback-form-active")) {
+        feedback.classList.remove("feedback-form-active");
+        overlay.classList.remove("overlay-active");
+      }
+    }
+  });
+
