@@ -13,16 +13,19 @@ a {
 .site-wrapper {
   min-width: 1200px;
   background-color: #849d8f;
-  background-image: url("img/slider-item1.png");
+  background-image: url("../img/bg-1.png");
   background-repeat: no-repeat;
   background-position: top center;
   -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
-  -o-transition: background-image 0.5s ease, background-color 0.5s ease;
-  transition: background-image 0.5s ease, background-color 0.5s ease;
+       -o-transition: background-image 0.5s ease, background-color 0.5s ease;
+          transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 .inner-page {
   min-width: 1200px;
   background-color: #849d8f;
+  background-image: url("../img/bg-illumination.png");
+  background-position: top;
+  background-repeat: no-repeat;
 }
 .page {
   width: 1146px;
@@ -40,11 +43,11 @@ a {
 }
 
 .site-wrapper::before {
-  background-image: url("../img/fon-2.png");
+  background-image: url("../img/bg-2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("../img/fon-3.png");
+  background-image: url("../img/bg-3.png");
 }
 
 .visually-hidden {
@@ -171,7 +174,7 @@ a {
   cursor: pointer;
 }
 .slide .button:hover,
- .slide .button:focus {
+.slide .button:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
@@ -213,15 +216,15 @@ a {
 }
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
-  background-image: url("../img/fon-1.png");
+  background-image: url("../img/bg-1.png");
 }
 #product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
-  background-image: url("../img/fon-2.png");
+  background-image: url("../img/bg-2.png");
 }
 #product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
-  background-image: url("../img/fon-3.png");
+  background-image: url("../img/bg-3.png");
 }
 #product-1:checked ~ .site-wrapper #slide1,
 #product-2:checked ~ .site-wrapper #slide2,
@@ -409,7 +412,8 @@ a {
 .additional-navigation > li:focus .login-form {
   display: block;
 }
-.login-form a {
+.links p {
+  display: inline;
   color: #323232;
   font-size: 13px;
   line-height: 16px;
@@ -417,9 +421,9 @@ a {
   border-bottom: 1px solid rgba(50, 50, 50, 0.3);
   margin-bottom: 5px;
 }
-.links a:hover,
-.links a:focus,
-.links a:active {
+.links p:hover,
+.links p:focus,
+.links p:active {
   color: rgb(232, 77, 55);
   border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
@@ -791,7 +795,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #ffffff;
-  background-image: url("../img/fon-raspberry.jpg");
+  background-image: url("../img/bg-raspberry.jpg");
   border-radius: 15px;
   background-color: #7f0715;
   background-repeat: repeat;
@@ -803,7 +807,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #48342e;
-  background-image: url("../img/fon-chocolate.jpg");
+  background-image: url("../img/bg-chocolate.jpg");
   border-radius: 15px;
   background-repeat: repeat;
   padding-left: 19px;
@@ -920,6 +924,7 @@ a {
   padding-right: 13px;
   padding-left: 13px;
   padding-top: 6px;
+  border-radius: 5px;
 }
 .catalog-item-contener div {
   position: absolute;
@@ -954,7 +959,7 @@ a {
   margin: 0;
   padding: 0;
 }
-.catalog-item a {
+.catalog-item .product {
   font-size: 16.2px;
   line-height: 22px;
   font-weight: 400;
@@ -976,17 +981,24 @@ a {
 }
 .catalog-item-contener .button {
   display: none;
-  margin: 16px 12px;
-  padding: 12px 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 33px;
+  margin-left: 33px;
+  padding: 10px 15px;
+  text-shadow: none;
 }
+
+
 .catalog-item-contener:hover .button,
 .catalog-item-contener:focus .button {
   display: block;
 }
 .catalog-item-contener:hover,
 .catalog-item-contener:focus {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(248, 247, 244, 0.2);
   z-index: 2;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -1125,7 +1137,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #323232;
-  background-image: url("../img/fon-strawberry.jpg");
+  background-image: url("../img/bg-strawberry.jpg");
   background-color: #ffffff;
   background-position: auto;
   background-repeat: no-repeat;
@@ -1505,7 +1517,7 @@ a {
   margin-bottom: 23px;
 }
 .feedback-form .button {
-   width: 138px;
+  width: 138px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
@@ -1573,11 +1585,10 @@ select::-ms-expand {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
- -ms-appearance: none;
-  appearance: none;
-  -moz-appearance: none;
   -webkit-appearance: none;
-
+     -moz-appearance: none;
+      -ms-appearance: none;
+          appearance: none;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1792,7 +1803,7 @@ select::-ms-expand {
 .additive li {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
   display: block;
   cursor: pointer;
@@ -1803,6 +1814,7 @@ select::-ms-expand {
 fieldset legend {
   margin-left: 16px;
 }
+
 .additive-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -1821,8 +1833,9 @@ fieldset legend {
   background-position: 0 0;
   cursor: pointer;
 }
+
 .additive-input-checkbox:checked + label::after {
- content: "";
+  content: "";
 
   position: absolute;
   left: -3px;
@@ -1840,11 +1853,15 @@ fieldset legend {
   background-position: 0 0;
   cursor: pointer;
 }
+
+.additive-input-checkbox:checked + label::before {
+  display: none;
+}
+
 .additive-input-checkbox:checked + label:hover::after,
 .additive-input-checkbox + label:hover::before {
   opacity: 1;
 }
-
 
 .filters-button {
   width: 146px;
@@ -1955,7 +1972,6 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
 
   -webkit-clip-path: inset(100%);
-
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
